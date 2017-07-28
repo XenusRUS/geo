@@ -1,0 +1,965 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = C621A2CB244B44506D1AC399FE15D57E /* Timeline.swift */; };
+		1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 677F8DFE8DB352EE198F7DDB42C78F38 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		221C70DE04E0B74B6E984278066C68BA /* Pods-geoTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B128A6232453C453B0C0AE6616723006 /* Pods-geoTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883155D1FC432C6B66E24D8D257D4AF1 /* TaskDelegate.swift */; };
+		5363470FB92B93EB2D479BE7747DEF97 /* Pods-geo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 31DFF257145BC044A1326852E094BCD8 /* Pods-geo-dummy.m */; };
+		5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11079BC8E0FC3FBF614A2FDC0817FB72 /* Request.swift */; };
+		61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1E9540EEE7F32283DF9233DE735A95 /* DispatchQueue+Alamofire.swift */; };
+		62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = D427E3F3FB34E315E7458A28EEDAF13D /* ServerTrustPolicy.swift */; };
+		751588CC516CB6644673817B0A5AE3CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA60FBF922DC1B86D4D72A9DAD0857B1 /* SessionDelegate.swift */; };
+		7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41A4E6E4CBDA889A7A0CA4E2B07D230 /* Result.swift */; };
+		8511AA71FB47D44653921829A65C5D84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		8E06259267FC8A646CC0C1282D88EA0B /* Pods-geoTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1190316D424498EDE7FE055E610576 /* Pods-geoTests-dummy.m */; };
+		9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FB217792B5910B2CEFD716D1EF6C55 /* AFError.swift */; };
+		A04BFC558D69E7DBB68023C80A9CFE4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36248190B5FBC17031D91873CDFC8B67 /* NetworkReachabilityManager.swift */; };
+		A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BFC890B39B91F10DB679E5E5F50004 /* Alamofire-dummy.m */; };
+		AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA99E1DF665805707E9A08B932D1AC29 /* SessionManager.swift */; };
+		B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F884A10DFA1B156B5DE4A2353FF094 /* MultipartFormData.swift */; };
+		B9A5DF7AA55DE34B386BCBE71268128D /* Pods-geoUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D2E624E51F2AC9303556A537078E1B9B /* Pods-geoUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB6665B5A9CD189FF1E67636E32A5F09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		BBEFE2F9CEB73DC7BD97FFA66A0D9D4F /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942EDF5E6148C4A72A44FFF0A641095E /* Validation.swift */; };
+		BE5C67A07E289FE1F9BE27335B159997 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535242F53BB3DCC63CB3D4CC38751A2E /* ParameterEncoding.swift */; };
+		CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325283B3BF176BD800E00D4D423F2D9D /* Response.swift */; };
+		CBA9E9845A862D996154D283F1B4761A /* Pods-geoUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB075F36B13E3AFEBABAB7B1F8930D3D /* Pods-geoUITests-dummy.m */; };
+		DF7D3731E545B4889A7495073D13CDFE /* Pods-geo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 87978F757E51F82BF3DB8EEB2F3A1A79 /* Pods-geo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EFD264FC408EBF3BA2528E70B08DDD94 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE4E04A0899FCC15AE5590A6993A145 /* Notifications.swift */; };
+		F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628A2ED3A230FE5340A6C46291396834 /* ResponseSerialization.swift */; };
+		F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A8414A5345419FB34474EF832D1216 /* Alamofire.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8B439B831D049A9A5FC0F1115D34CBD2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88E9EC28B8B46C3631E6B242B50F4442;
+			remoteInfo = Alamofire;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04BFC890B39B91F10DB679E5E5F50004 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		11079BC8E0FC3FBF614A2FDC0817FB72 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		220350FBBD443EA52B2CE117099E7967 /* Pods-geo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-geo.release.xcconfig"; sourceTree = "<group>"; };
+		23BB628F2C96E3D97372505954985EBD /* Pods-geoTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-geoTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		249446F6BBA603319A450BAA0579CDCA /* Pods_geo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_geo.framework; path = "Pods-geo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		31D0A55B684FB9B56C1A33A8D908F87C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31DFF257145BC044A1326852E094BCD8 /* Pods-geo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-geo-dummy.m"; sourceTree = "<group>"; };
+		325283B3BF176BD800E00D4D423F2D9D /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		32C8F6D1CC1568949200B26F0DFECD7C /* Pods-geoTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-geoTests.modulemap"; sourceTree = "<group>"; };
+		36248190B5FBC17031D91873CDFC8B67 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		37F884A10DFA1B156B5DE4A2353FF094 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		403025D64EB823F6F03D414C66606710 /* Pods-geoTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-geoTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		4C13A5E393BA8DACE68E32A8E1BF87C7 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		4C3B42FD9AAF185F264DA50C5A5F3EFD /* Pods-geo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-geo.modulemap"; sourceTree = "<group>"; };
+		4F66180F8CBA9BA176366530014A36F5 /* Pods-geoUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-geoUITests.modulemap"; sourceTree = "<group>"; };
+		535242F53BB3DCC63CB3D4CC38751A2E /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		59DAE076AAD90A20CD3D869AC773528E /* Pods-geoUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-geoUITests-resources.sh"; sourceTree = "<group>"; };
+		5DCE55F43CD029B6B70409666FF49B01 /* Pods-geoUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-geoUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		5DFBAF3DF556BE3E7D735D3D115CF92E /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		628A2ED3A230FE5340A6C46291396834 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		65984A2189FAFEDE23C27F48DA0B30D6 /* Pods-geo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-geo-frameworks.sh"; sourceTree = "<group>"; };
+		669EF95F592074C9FA22DB6E7F172CEA /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		677F8DFE8DB352EE198F7DDB42C78F38 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		6846B28631A96B4A4C9B25AA957BACE3 /* Pods-geo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-geo-acknowledgements.plist"; sourceTree = "<group>"; };
+		69015783758B44E8912F19B45EA1E901 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		695F70B4C09C6CDAF407767DA18AE668 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		85CA676A896EA1583791A0B70773985E /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87978F757E51F82BF3DB8EEB2F3A1A79 /* Pods-geo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-geo-umbrella.h"; sourceTree = "<group>"; };
+		883155D1FC432C6B66E24D8D257D4AF1 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		942EDF5E6148C4A72A44FFF0A641095E /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		971CE3789900AA5A5716251E10689EE9 /* Pods-geo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-geo-resources.sh"; sourceTree = "<group>"; };
+		A0255A38F66D949548CD48D46AA40D74 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3CD8E4423AC8432C6BD07956D322FDB /* Pods_geoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_geoUITests.framework; path = "Pods-geoUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A73DA984BC9F5266418CCF5CBBAA39F7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A90150871B2A87BE8DCE740E45321621 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		AA99E1DF665805707E9A08B932D1AC29 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
+		AC254E31A6FBDE7559CF0E98E45527FA /* Pods-geoTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-geoTests-resources.sh"; sourceTree = "<group>"; };
+		AF60B7A8A8ED5135B50CC5F313E9CBA1 /* Pods-geoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-geoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B128A6232453C453B0C0AE6616723006 /* Pods-geoTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-geoTests-umbrella.h"; sourceTree = "<group>"; };
+		B8381606D8F31D079D6AD57AED0E59C7 /* Pods-geoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-geoTests.release.xcconfig"; sourceTree = "<group>"; };
+		BA1E9540EEE7F32283DF9233DE735A95 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		BF1190316D424498EDE7FE055E610576 /* Pods-geoTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-geoTests-dummy.m"; sourceTree = "<group>"; };
+		C21C86FE2E31ADE0ED8313A10E31128C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C476FEBB15FB512B0C5FE59BCC59F5A3 /* Pods-geoUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-geoUITests-frameworks.sh"; sourceTree = "<group>"; };
+		C621A2CB244B44506D1AC399FE15D57E /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		CB075F36B13E3AFEBABAB7B1F8930D3D /* Pods-geoUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-geoUITests-dummy.m"; sourceTree = "<group>"; };
+		CBA4D5D345704BB8C67CC8D209C8EF77 /* Pods-geoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-geoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D2E624E51F2AC9303556A537078E1B9B /* Pods-geoUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-geoUITests-umbrella.h"; sourceTree = "<group>"; };
+		D41A4E6E4CBDA889A7A0CA4E2B07D230 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		D427E3F3FB34E315E7458A28EEDAF13D /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		D631A2AD3BF10B0AD9C4076BDE1950F3 /* Pods-geoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-geoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E46E613487D39CD6B42641AE9A6629FA /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		E7A8414A5345419FB34474EF832D1216 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		E8F9F459EC6D4D3F191282CC3AD41BF4 /* Pods-geoUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-geoUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F032A40DB3DC44E6192C59CC3C584C28 /* Pods-geoTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-geoTests-frameworks.sh"; sourceTree = "<group>"; };
+		F8181AE3B861A65F83DCF31324C3AA4E /* Pods-geo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-geo.debug.xcconfig"; sourceTree = "<group>"; };
+		F83D148D210DE0D93699C3051E300673 /* Pods-geo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-geo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F9FB217792B5910B2CEFD716D1EF6C55 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		FA60FBF922DC1B86D4D72A9DAD0857B1 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		FABE5A5DD20537AA6A626F6573C6F7E8 /* Pods_geoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_geoTests.framework; path = "Pods-geoTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDE4E04A0899FCC15AE5590A6993A145 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0441F6B7E1D6CC5F45BAAA9A3578BD95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8511AA71FB47D44653921829A65C5D84 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		184FE3F56A7793D84B8CC435F1E5013A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB6665B5A9CD189FF1E67636E32A5F09 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99195E4207764744AEC07ECCBCD550EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A04BFC558D69E7DBB68023C80A9CFE4E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E2F82B1DA70F7360C9E019FDA38C18BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				751588CC516CB6644673817B0A5AE3CE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		011F5053DE30E3B2B86A7709945AE423 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				06A8575B4AD59816009C1B6AA4BE58AF /* Frameworks */,
+				6CBDEB743BBB5D0B91A9B0C7E94D7B6D /* Resources */,
+			);
+			name = Maps;
+			sourceTree = "<group>";
+		};
+		0457A04A805A05F0A3BD48D4CA57DCA6 /* Pods-geoTests */ = {
+			isa = PBXGroup;
+			children = (
+				31D0A55B684FB9B56C1A33A8D908F87C /* Info.plist */,
+				32C8F6D1CC1568949200B26F0DFECD7C /* Pods-geoTests.modulemap */,
+				23BB628F2C96E3D97372505954985EBD /* Pods-geoTests-acknowledgements.markdown */,
+				403025D64EB823F6F03D414C66606710 /* Pods-geoTests-acknowledgements.plist */,
+				BF1190316D424498EDE7FE055E610576 /* Pods-geoTests-dummy.m */,
+				F032A40DB3DC44E6192C59CC3C584C28 /* Pods-geoTests-frameworks.sh */,
+				AC254E31A6FBDE7559CF0E98E45527FA /* Pods-geoTests-resources.sh */,
+				B128A6232453C453B0C0AE6616723006 /* Pods-geoTests-umbrella.h */,
+				CBA4D5D345704BB8C67CC8D209C8EF77 /* Pods-geoTests.debug.xcconfig */,
+				B8381606D8F31D079D6AD57AED0E59C7 /* Pods-geoTests.release.xcconfig */,
+			);
+			name = "Pods-geoTests";
+			path = "Target Support Files/Pods-geoTests";
+			sourceTree = "<group>";
+		};
+		05AC1BCDD8D8F3AE07FB84FBB38CD60E /* Pods-geo */ = {
+			isa = PBXGroup;
+			children = (
+				A0255A38F66D949548CD48D46AA40D74 /* Info.plist */,
+				4C3B42FD9AAF185F264DA50C5A5F3EFD /* Pods-geo.modulemap */,
+				F83D148D210DE0D93699C3051E300673 /* Pods-geo-acknowledgements.markdown */,
+				6846B28631A96B4A4C9B25AA957BACE3 /* Pods-geo-acknowledgements.plist */,
+				31DFF257145BC044A1326852E094BCD8 /* Pods-geo-dummy.m */,
+				65984A2189FAFEDE23C27F48DA0B30D6 /* Pods-geo-frameworks.sh */,
+				971CE3789900AA5A5716251E10689EE9 /* Pods-geo-resources.sh */,
+				87978F757E51F82BF3DB8EEB2F3A1A79 /* Pods-geo-umbrella.h */,
+				F8181AE3B861A65F83DCF31324C3AA4E /* Pods-geo.debug.xcconfig */,
+				220350FBBD443EA52B2CE117099E7967 /* Pods-geo.release.xcconfig */,
+			);
+			name = "Pods-geo";
+			path = "Target Support Files/Pods-geo";
+			sourceTree = "<group>";
+		};
+		06A8575B4AD59816009C1B6AA4BE58AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				669EF95F592074C9FA22DB6E7F172CEA /* GoogleMaps.framework */,
+				4C13A5E393BA8DACE68E32A8E1BF87C7 /* GoogleMapsCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0D97091219CAD720A89B4D8DE378D899 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				695F70B4C09C6CDAF407767DA18AE668 /* GoogleMapsBase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2671FB1BC2504CA3E36DF65F6CA3BA15 /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				3064D426EE7847D26F3C9278EF28E54B /* Base */,
+				011F5053DE30E3B2B86A7709945AE423 /* Maps */,
+			);
+			name = GoogleMaps;
+			path = GoogleMaps;
+			sourceTree = "<group>";
+		};
+		3064D426EE7847D26F3C9278EF28E54B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0D97091219CAD720A89B4D8DE378D899 /* Frameworks */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		40E6393ECCDB38944388086C410FCA03 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				F9FB217792B5910B2CEFD716D1EF6C55 /* AFError.swift */,
+				E7A8414A5345419FB34474EF832D1216 /* Alamofire.swift */,
+				BA1E9540EEE7F32283DF9233DE735A95 /* DispatchQueue+Alamofire.swift */,
+				37F884A10DFA1B156B5DE4A2353FF094 /* MultipartFormData.swift */,
+				36248190B5FBC17031D91873CDFC8B67 /* NetworkReachabilityManager.swift */,
+				FDE4E04A0899FCC15AE5590A6993A145 /* Notifications.swift */,
+				535242F53BB3DCC63CB3D4CC38751A2E /* ParameterEncoding.swift */,
+				11079BC8E0FC3FBF614A2FDC0817FB72 /* Request.swift */,
+				325283B3BF176BD800E00D4D423F2D9D /* Response.swift */,
+				628A2ED3A230FE5340A6C46291396834 /* ResponseSerialization.swift */,
+				D41A4E6E4CBDA889A7A0CA4E2B07D230 /* Result.swift */,
+				D427E3F3FB34E315E7458A28EEDAF13D /* ServerTrustPolicy.swift */,
+				FA60FBF922DC1B86D4D72A9DAD0857B1 /* SessionDelegate.swift */,
+				AA99E1DF665805707E9A08B932D1AC29 /* SessionManager.swift */,
+				883155D1FC432C6B66E24D8D257D4AF1 /* TaskDelegate.swift */,
+				C621A2CB244B44506D1AC399FE15D57E /* Timeline.swift */,
+				942EDF5E6148C4A72A44FFF0A641095E /* Validation.swift */,
+				678148F431C3BB041AB5F1C995E93B9B /* Support Files */,
+			);
+			name = Alamofire;
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		46BF655E3B6AB701954B9AC981320C71 /* Pods-geoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A73DA984BC9F5266418CCF5CBBAA39F7 /* Info.plist */,
+				4F66180F8CBA9BA176366530014A36F5 /* Pods-geoUITests.modulemap */,
+				E8F9F459EC6D4D3F191282CC3AD41BF4 /* Pods-geoUITests-acknowledgements.markdown */,
+				5DCE55F43CD029B6B70409666FF49B01 /* Pods-geoUITests-acknowledgements.plist */,
+				CB075F36B13E3AFEBABAB7B1F8930D3D /* Pods-geoUITests-dummy.m */,
+				C476FEBB15FB512B0C5FE59BCC59F5A3 /* Pods-geoUITests-frameworks.sh */,
+				59DAE076AAD90A20CD3D869AC773528E /* Pods-geoUITests-resources.sh */,
+				D2E624E51F2AC9303556A537078E1B9B /* Pods-geoUITests-umbrella.h */,
+				D631A2AD3BF10B0AD9C4076BDE1950F3 /* Pods-geoUITests.debug.xcconfig */,
+				AF60B7A8A8ED5135B50CC5F313E9CBA1 /* Pods-geoUITests.release.xcconfig */,
+			);
+			name = "Pods-geoUITests";
+			path = "Target Support Files/Pods-geoUITests";
+			sourceTree = "<group>";
+		};
+		678148F431C3BB041AB5F1C995E93B9B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E46E613487D39CD6B42641AE9A6629FA /* Alamofire.modulemap */,
+				69015783758B44E8912F19B45EA1E901 /* Alamofire.xcconfig */,
+				04BFC890B39B91F10DB679E5E5F50004 /* Alamofire-dummy.m */,
+				A90150871B2A87BE8DCE740E45321621 /* Alamofire-prefix.pch */,
+				677F8DFE8DB352EE198F7DDB42C78F38 /* Alamofire-umbrella.h */,
+				C21C86FE2E31ADE0ED8313A10E31128C /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		6CBDEB743BBB5D0B91A9B0C7E94D7B6D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5DFBAF3DF556BE3E7D735D3D115CF92E /* GoogleMaps.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				A19CF85243A449348F3F31FEB1BFA419 /* Pods */,
+				DBC6750B778963F0097348992DC0C026 /* Products */,
+				C0509AD528A229D4CBC1062779CDC3DE /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A19CF85243A449348F3F31FEB1BFA419 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				40E6393ECCDB38944388086C410FCA03 /* Alamofire */,
+				2671FB1BC2504CA3E36DF65F6CA3BA15 /* GoogleMaps */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C0509AD528A229D4CBC1062779CDC3DE /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				05AC1BCDD8D8F3AE07FB84FBB38CD60E /* Pods-geo */,
+				0457A04A805A05F0A3BD48D4CA57DCA6 /* Pods-geoTests */,
+				46BF655E3B6AB701954B9AC981320C71 /* Pods-geoUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		DBC6750B778963F0097348992DC0C026 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85CA676A896EA1583791A0B70773985E /* Alamofire.framework */,
+				249446F6BBA603319A450BAA0579CDCA /* Pods_geo.framework */,
+				FABE5A5DD20537AA6A626F6573C6F7E8 /* Pods_geoTests.framework */,
+				A3CD8E4423AC8432C6BD07956D322FDB /* Pods_geoUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		656696234F1010391642317D55D92665 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF7D3731E545B4889A7495073D13CDFE /* Pods-geo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4002B6E97835FDCCAA5963EFE09A3E0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B9EDEDC964E6B08F78920B4F4B9DB84 /* Alamofire-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED9101C23B1971B5CF8640728FDD5AA8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				221C70DE04E0B74B6E984278066C68BA /* Pods-geoTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F293F20BEF3A85EAF0FDD2B70BB1364E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9A5DF7AA55DE34B386BCBE71268128D /* Pods-geoUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		207D7A2D63473F86BF451C5B527D890F /* Pods-geoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB28006154E9D92616BA474DE634CEA8 /* Build configuration list for PBXNativeTarget "Pods-geoUITests" */;
+			buildPhases = (
+				731D746B9FF5E147FED85E380FCFF6C4 /* Sources */,
+				E2F82B1DA70F7360C9E019FDA38C18BD /* Frameworks */,
+				F293F20BEF3A85EAF0FDD2B70BB1364E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-geoUITests";
+			productName = "Pods-geoUITests";
+			productReference = A3CD8E4423AC8432C6BD07956D322FDB /* Pods_geoUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7C1608B45C09F18F8060D4CA88F47877 /* Pods-geoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFD5958AF29A548BE88F98F8C6191DA8 /* Build configuration list for PBXNativeTarget "Pods-geoTests" */;
+			buildPhases = (
+				C695879806D7BD053BA15B76B74FCA9F /* Sources */,
+				184FE3F56A7793D84B8CC435F1E5013A /* Frameworks */,
+				ED9101C23B1971B5CF8640728FDD5AA8 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-geoTests";
+			productName = "Pods-geoTests";
+			productReference = FABE5A5DD20537AA6A626F6573C6F7E8 /* Pods_geoTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 419E5D95491847CD79841B971A8A3277 /* Build configuration list for PBXNativeTarget "Alamofire" */;
+			buildPhases = (
+				32B9974868188C4803318E36329C87FE /* Sources */,
+				99195E4207764744AEC07ECCBCD550EB /* Frameworks */,
+				B4002B6E97835FDCCAA5963EFE09A3E0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alamofire;
+			productName = Alamofire;
+			productReference = 85CA676A896EA1583791A0B70773985E /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		98735E5ADE76D0AD729AED56B1D407B1 /* Pods-geo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9875C8FCC88C7A36FCFCBFCE34ADB5F6 /* Build configuration list for PBXNativeTarget "Pods-geo" */;
+			buildPhases = (
+				C1072ECE6F7074A92FAB2F3E04243B6F /* Sources */,
+				0441F6B7E1D6CC5F45BAAA9A3578BD95 /* Frameworks */,
+				656696234F1010391642317D55D92665 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83F12B2FF79ACB137739C077FEE5B28A /* PBXTargetDependency */,
+			);
+			name = "Pods-geo";
+			productName = "Pods-geo";
+			productReference = 249446F6BBA603319A450BAA0579CDCA /* Pods_geo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = DBC6750B778963F0097348992DC0C026 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */,
+				98735E5ADE76D0AD729AED56B1D407B1 /* Pods-geo */,
+				7C1608B45C09F18F8060D4CA88F47877 /* Pods-geoTests */,
+				207D7A2D63473F86BF451C5B527D890F /* Pods-geoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32B9974868188C4803318E36329C87FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ED2BB2981896E0A39EFA365503F58CE /* AFError.swift in Sources */,
+				A9EEEA7477981DEEBC72432DE9990A4B /* Alamofire-dummy.m in Sources */,
+				F8B3D3092ED0417E8CDF32033F6122F5 /* Alamofire.swift in Sources */,
+				61200D01A1855D7920CEF835C8BE00B0 /* DispatchQueue+Alamofire.swift in Sources */,
+				B65FCF589DA398C3EFE0128064E510EC /* MultipartFormData.swift in Sources */,
+				A2A6F71B727312BD45CC7A4AAD7B0AB7 /* NetworkReachabilityManager.swift in Sources */,
+				EFD264FC408EBF3BA2528E70B08DDD94 /* Notifications.swift in Sources */,
+				BE5C67A07E289FE1F9BE27335B159997 /* ParameterEncoding.swift in Sources */,
+				5387216E723A3C68E851CA15573CDD71 /* Request.swift in Sources */,
+				CB6D60925223897FFA2662667DF83E8A /* Response.swift in Sources */,
+				F6BECD98B97CBFEBE2C96F0E9E72A6C0 /* ResponseSerialization.swift in Sources */,
+				7D8CC01E8C9EFFF9F4D65406CDE0AB66 /* Result.swift in Sources */,
+				62F65AD8DC4F0F9610F4B8B4738EC094 /* ServerTrustPolicy.swift in Sources */,
+				7B5FE28C7EA4122B0598738E54DBEBD8 /* SessionDelegate.swift in Sources */,
+				AE1EF48399533730D0066E04B22CA2D6 /* SessionManager.swift in Sources */,
+				3626B94094672CB1C9DEA32B9F9502E1 /* TaskDelegate.swift in Sources */,
+				10EB23E9ECC4B33E16933BB1EA560B6A /* Timeline.swift in Sources */,
+				BBEFE2F9CEB73DC7BD97FFA66A0D9D4F /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		731D746B9FF5E147FED85E380FCFF6C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBA9E9845A862D996154D283F1B4761A /* Pods-geoUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1072ECE6F7074A92FAB2F3E04243B6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5363470FB92B93EB2D479BE7747DEF97 /* Pods-geo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C695879806D7BD053BA15B76B74FCA9F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E06259267FC8A646CC0C1282D88EA0B /* Pods-geoTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		83F12B2FF79ACB137739C077FEE5B28A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = 88E9EC28B8B46C3631E6B242B50F4442 /* Alamofire */;
+			targetProxy = 8B439B831D049A9A5FC0F1115D34CBD2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		018B831D6962FD977C72E377A2A75EFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8181AE3B861A65F83DCF31324C3AA4E /* Pods-geo.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-geo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-geo/Pods-geo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_geo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0A29B6F510198AF64EFD762EF6FA97A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69015783758B44E8912F19B45EA1E901 /* Alamofire.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		26E0565334A174D25D020F02A7B23FD2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF60B7A8A8ED5135B50CC5F313E9CBA1 /* Pods-geoUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-geoUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-geoUITests/Pods-geoUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_geoUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		527A6BED77993EB8E5B07480B686A38C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 220350FBBD443EA52B2CE117099E7967 /* Pods-geo.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-geo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-geo/Pods-geo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_geo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		673254EEAF0B5BF4596080C749645884 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		67AE3403AFCD24F0E01423B70A366711 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8381606D8F31D079D6AD57AED0E59C7 /* Pods-geoTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-geoTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-geoTests/Pods-geoTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_geoTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		98A4381AFB58AD67DB22A0BE6CCD8912 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBA4D5D345704BB8C67CC8D209C8EF77 /* Pods-geoTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-geoTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-geoTests/Pods-geoTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_geoTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E31389FF915D4D078BFFDE853BECD4DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D631A2AD3BF10B0AD9C4076BDE1950F3 /* Pods-geoUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-geoUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-geoUITests/Pods-geoUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_geoUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F383079BFBF927813EA3613CFB679FDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69015783758B44E8912F19B45EA1E901 /* Alamofire.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */,
+				673254EEAF0B5BF4596080C749645884 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		419E5D95491847CD79841B971A8A3277 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F383079BFBF927813EA3613CFB679FDE /* Debug */,
+				0A29B6F510198AF64EFD762EF6FA97A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9875C8FCC88C7A36FCFCBFCE34ADB5F6 /* Build configuration list for PBXNativeTarget "Pods-geo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				018B831D6962FD977C72E377A2A75EFF /* Debug */,
+				527A6BED77993EB8E5B07480B686A38C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB28006154E9D92616BA474DE634CEA8 /* Build configuration list for PBXNativeTarget "Pods-geoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E31389FF915D4D078BFFDE853BECD4DA /* Debug */,
+				26E0565334A174D25D020F02A7B23FD2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFD5958AF29A548BE88F98F8C6191DA8 /* Build configuration list for PBXNativeTarget "Pods-geoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98A4381AFB58AD67DB22A0BE6CCD8912 /* Debug */,
+				67AE3403AFCD24F0E01423B70A366711 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
